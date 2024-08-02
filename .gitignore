@@ -21,6 +21,7 @@ bin/
 **/application.properties
 **/application.yml
 application-aws.yml
+application-ec2.yml
 .idea
 *.iws
 *.iml
