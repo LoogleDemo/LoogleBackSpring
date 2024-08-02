@@ -36,6 +36,11 @@ public class ProductController {
         return productService.searchByImage(imageFile);
     }
 
+    @GetMapping("/health")
+    public String healthCheck(){
+        return "성공";
+    }
+
 
 
 }
