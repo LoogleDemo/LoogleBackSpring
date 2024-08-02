@@ -20,4 +20,10 @@ public class BrandController {
         return new StringResponse("브랜드 리스트 DB 저장 완료");
     }
 
+    @GetMapping("/all")
+    public List<BrandListResponse> getAllBrands(){
+        return brandService.getAllBrands();
+
+    }
+
 }

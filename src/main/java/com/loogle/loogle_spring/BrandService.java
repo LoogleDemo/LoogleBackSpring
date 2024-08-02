@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -26,6 +27,16 @@ public class BrandService {
             }
             brandRepository.save(new Brand(request.getBrandName(), request.getIconUrl(), request.getBannerUrl()));
         }
+    }
+
+    @Transactional
+    public List<BrandListResponse> getAllBrands(){
+        List<BrandListResponse> dtos = new ArrayList<>();
+        List<Brand> brands = brandRepository.findAll();
+        for (Brand brand : brands) {
+            dtos.add(new BrandListResponse(brand.getId(), brand.getBrandName(), brand.getIconUrl()));
+        }
+        return dtos;
     }
 
 
