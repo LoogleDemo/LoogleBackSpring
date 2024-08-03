@@ -14,7 +14,6 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequiredArgsConstructor
-@CrossOrigin(origins = "14.40.14.110:3000")
 @RequestMapping("/products")
 public class ProductController {
 
