@@ -110,7 +110,7 @@ public class ProductService {
 
         // SearchItemResponse 객체 생성
         searchResponses.add(new SearchItemResponse(productIds, similarities, dtos));
-
+        log.info("프론트한테 보내줬나요???");
         return searchResponses;
     }
 
