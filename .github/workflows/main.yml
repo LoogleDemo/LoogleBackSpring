@@ -7,9 +7,9 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2
-  S3_BUCKET_NAME: loogle-github-actions-s3-bucket
-  CODE_DEPLOY_APPLICATION_NAME: loogle-spring
-  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: looglespring-codedeploy-deployment-group
+  S3_BUCKET_NAME: looglereal-github-actions-s3-bucket 
+  CODE_DEPLOY_APPLICATION_NAME: looglereal-spring
+  CODE_DEPLOY_DEPLOYMENT_GROUP_NAME: looglerealspring-codedeploy-deployment-group
 
 permissions:
   contents: read
