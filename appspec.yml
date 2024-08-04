@@ -11,7 +11,6 @@ permissions:
     pattern: "**" # 매칭되는 패턴에만 권한 부여
     owner: ubuntu # object의 소유자
     group: ubuntu # object의 그룹 이름
-
 hooks:
   AfterInstall: # CodeDeploy의 AfterInstall 단계에서 실행
     - location: scripts/stop.sh # hooks에서 실행할 스크립트의 위치
